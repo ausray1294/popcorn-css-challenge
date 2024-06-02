@@ -1,5 +1,18 @@
-/*COLORS:
-Header background - #FFDBAA
-button - #805215
-Header Text - #553100
-Main background - #D4A76A*/
+
+/* Header background - #FFDBAA */
+header {
+  background-color: #FFDBAA
+}
+
+/* button - #805215 */
+button {
+  color: #805215
+}
+/* Header Text - #553100 */
+header {
+  text-color: #553100
+}
+/* Main background - #D4A76A */
+main {
+  background-color: #D4A76A
+}
