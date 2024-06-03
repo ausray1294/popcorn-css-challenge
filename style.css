@@ -20,16 +20,17 @@ header h1 {
 
 /* New Class for Top Buttons */
 .topButtons {
-  float: right;
+  float: none;
   margin-left: 10px;
 }
 
 
 /* ????? how I'm going to organize the nav list to the right ?????*/
 nav li {
-  display: inline;
-  right: 700px;
-  margin-left: 10px;
+  display: inline-flex;
+  float: right;
+  float: top;
+  margin-right: 10px;
 }
 
 /* add a thin black line above the body */
@@ -60,7 +61,7 @@ main {
 
 .bottomButton {
   float: center; /* is this even doing anything or is something conflicting */
-
+  flex: center
 }
 
 /* creating the general button styles */
@@ -92,4 +93,17 @@ button {
 
 #aboutUs {
   margin-top: 10px;
+}
+
+/* adding this id so that way I can make the button stretch across the bottom */
+#aboutUsButton {
+  width: 98%;
+  margin-bottom: 30px;
+  float: center
+}
+
+/* trying to center all the buttons in the boxes */
+main section button {
+  justify-content: center;
+  float: none;
 }
