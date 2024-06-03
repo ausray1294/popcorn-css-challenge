@@ -4,16 +4,26 @@ header {
   background-color: #FFDBAA;
   color: #553100;
   padding: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* adjustin my website font */
 header h1 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 /* organizing the whoele unorganized list so they display appropriately */
 nav ul {
   list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+/* how I'm going to organize the nav list */
+nav li {
+  display: inline;
+  right 700px
 }
 
 /* creating the general button styles */
@@ -21,12 +31,34 @@ button {
   background-color: #805215;
   color: white;
   height: 30px;
+  font-weight: bold;
 }
 
 /* Main background - #D4A76A */
 main {
   background-color: #D4A76A;
+  padding: 20px;
 }
+
+/* shared class for section styling */
+.info-section {
+  border-style: ridge;
+  background-color: white;
+  width: 230px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+/* make the about us wide enough to fill the bottom page */
+#aboutUs {
+  width: 1200px;
+}
+
+/* my go at centering the body */
+body {
+
+}
+
 
 /* Creating this to edit each class that is a title for the spans*/
 .popularLinks {
@@ -34,46 +66,13 @@ main {
   text-align: center;
 }
 
-
-/* Use Ids to move around the header items */
-#webSiteName {
-  text-size-adjust: 100px;
-}
-#homeButton {}
-#flightsButton {}
-#supportButton {}
-#loginButton {}
-
-
-
-
-
-/* grabbing all the div IDs so I can start making white boxes */
-
-#myFlights {
-  border-style: ridge; /* or groove? */
-  background-color: white;
-  width: 230px;
-  height: 160px;
-};
-
-#groupTrips {
-  border-style: ridge; /* or groove? */
-  background-color: white;
-  width: 230px;
-  height: 160px;
+/* paragraph class so I can edit them easier */
+.paragraphThatDescribe {
+  font-size: 16px;
 }
 
-#discountFlights {
-  border-style: ridge; /* or groove? */
-  background-color: white;
-  width: 230px;
-  height: 160px;
-}
-
-#aboutUs {
-  border-style: ridge; /* or groove? */
-  background-color: white;
-  width: 780px;
-  height: 160px;
+/* New Class for Top Buttons */
+.topButtons {
+  float: right;
+  margin-left: 10px;
 }
