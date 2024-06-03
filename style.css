@@ -13,17 +13,54 @@ header h1 {
   font-size: 30px;
 }
 
-/* organizing the whoele unorganized list so they display appropriately */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+/* added: to directly handle space between items in the nav */
+/* nav {
+  margin-left: auto;
+} */
+
+/* New Class for Top Buttons */
+.topButtons {
+  float: right;
+  margin-left: 10px;
 }
 
-/* how I'm going to organize the nav list */
+
+/* ????? how I'm going to organize the nav list to the right ?????*/
 nav li {
   display: inline;
-  right 700px
+  right: 700px;
+  margin-left: 10px;
+}
+
+/* add a thin black line above the body */
+body {
+
+}
+
+
+/* Main background - #D4A76A */
+main {
+  background-color: #D4A76A;
+  padding: 20px;
+  display: flex; /* for row layout */
+  flex-wrap: wrap; /*  to wrap rows */
+  gap: 20px; /*  space between elements */
+  justify-content: center; /* center items */
+}
+
+/* shared class for section styling */
+.info-section {
+  border-style: ridge;
+  background-color: white;
+  width: 230px; /* ensure they fit into the row layout */
+  height: 180px;
+  flex: 1; /*  to grow/shrink with window */
+  margin-bottom: 20px;
+}
+
+.bottomButton {
+  float: center; /* is this even doing anything or is something conflicting */
+
 }
 
 /* creating the general button styles */
@@ -34,29 +71,11 @@ button {
   font-weight: bold;
 }
 
-/* Main background - #D4A76A */
-main {
-  background-color: #D4A76A;
-  padding: 20px;
-}
 
-/* shared class for section styling */
-.info-section {
-  border-style: ridge;
-  background-color: white;
-  width: 230px;
-  height: 180px;
-  margin-bottom: 20px;
-}
 
 /* make the about us wide enough to fill the bottom page */
 #aboutUs {
-  width: 1200px;
-}
-
-/* my go at centering the body */
-body {
-
+  width: 100%;
 }
 
 
@@ -68,11 +87,9 @@ body {
 
 /* paragraph class so I can edit them easier */
 .paragraphThatDescribe {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* New Class for Top Buttons */
-.topButtons {
-  float: right;
-  margin-left: 10px;
+#aboutUs {
+  margin-top: 10px;
 }
